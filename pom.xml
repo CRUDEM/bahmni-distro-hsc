@@ -72,7 +72,7 @@
     <uicommonsVersion>2.3.0</uicommonsVersion>
     <uiframeworkVersion>3.8</uiframeworkVersion>
     <uilibraryVersion>2.0.5</uilibraryVersion>
-    <webservices.restVersion>2.20.0</webservices.restVersion>
+    <webservices.restVersion>2.24.0</webservices.restVersion>
     <auditLogVersion>1.1-SNAPSHOT</auditLogVersion>
     
   </properties>
