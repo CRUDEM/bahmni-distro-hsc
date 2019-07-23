@@ -24,17 +24,18 @@
     <distro.bahmniconfigDir>${distro.baseDir}/bahmni_config</distro.bahmniconfigDir>
     <distro.openmrscoreDir>${distro.baseDir}/openmrs_core</distro.openmrscoreDir>
     <distro.openmrsmodulesDir>${distro.baseDir}/openmrs_modules</distro.openmrsmodulesDir>
+    <distro.odooAddonsDir>${distro.baseDir}/odoo_addons</distro.odooAddonsDir>
 
     <!-- Core -->
     <openMRSVersion>2.1.3</openMRSVersion>
-    
+
     <!-- Configs -->
     <openmrsconfigVersion>1.0.0-SNAPSHOT</openmrsconfigVersion>
     <bahmniconfigVersion>1.0.0-SNAPSHOT</bahmniconfigVersion>
 
     <!-- Bahmni Apps -->
     <bahmniappsRevision>0.91.x</bahmniappsRevision>
-    
+
     <!-- In dev -->
     <initializerVersion>1.2.0-SNAPSHOT</initializerVersion>
 
@@ -49,7 +50,7 @@
     <bedmanagementVersion>5.8.1</bedmanagementVersion>
     <mailappenderVersion>0.91-SNAPSHOT</mailappenderVersion>
     <appointmentsVersion>1.1-SNAPSHOT</appointmentsVersion>
-    
+
     <!-- OpenMRS modules -->
     <addresshierarchyVersion>2.11.0</addresshierarchyVersion>
     <appframeworkVersion>2.10.0</appframeworkVersion>
@@ -74,7 +75,10 @@
     <uilibraryVersion>2.0.5</uilibraryVersion>
     <webservices.restVersion>2.24.0</webservices.restVersion>
     <auditLogVersion>1.1-SNAPSHOT</auditLogVersion>
-    
+
+    <!-- Odoo addons -->
+    <odooInitializerVersion>1.0-SNAPSHOT</odooInitializerVersion>
+
   </properties>
 
   <dependencies>
@@ -278,6 +282,12 @@
       <artifactId>initializer-omod</artifactId>
       <version>${initializerVersion}</version>
     </dependency>
+    <dependency>
+      <groupId>net.mekomsolutions.odoo</groupId>
+      <artifactId>odoo_initializer</artifactId>
+      <version>${odooInitializerVersion}</version>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
   <build>
@@ -356,6 +366,20 @@
               <useBaseVersion>true</useBaseVersion>
               <outputDirectory>${distro.bahmniemrDir}/bahmniapps</outputDirectory>
               <includeArtifactIds>bahmniapps</includeArtifactIds>
+            </configuration>
+          </execution>
+          <!-- Odoo addons -->
+          <execution>
+            <id>copy-odoo-addons</id>
+            <phase>package</phase>
+            <goals>
+              <goal>unpack-dependencies</goal>
+            </goals>
+            <configuration>
+              <excludeTransitive>true</excludeTransitive>
+              <useBaseVersion>true</useBaseVersion>
+              <outputDirectory>${distro.odooAddonsDir}</outputDirectory>
+              <includeGroupIds>net.mekomsolutions.odoo</includeGroupIds> <!-- copy Odoo addons only -->
             </configuration>
           </execution>
         </executions>
