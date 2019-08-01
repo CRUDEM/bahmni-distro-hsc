@@ -38,6 +38,7 @@
 
     <!-- In dev -->
     <initializerVersion>1.2.0-SNAPSHOT</initializerVersion>
+    <openmrsERPVersion>1.0.0-SNAPSHOT</openmrsERPVersion>
 
     <!-- Bahmni modules -->
     <bahmnicoreVersion>0.91-SNAPSHOT</bahmnicoreVersion>
@@ -287,6 +288,11 @@
       <artifactId>odoo_initializer</artifactId>
       <version>${odooInitializerVersion}</version>
       <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>erp-omod</artifactId>
+      <version>${openmrsERPVersion}</version>
     </dependency>
   </dependencies>
 
