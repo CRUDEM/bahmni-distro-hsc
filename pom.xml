@@ -25,6 +25,7 @@
     <distro.openmrscoreDir>${distro.baseDir}/openmrs_core</distro.openmrscoreDir>
     <distro.openmrsmodulesDir>${distro.baseDir}/openmrs_modules</distro.openmrsmodulesDir>
     <distro.odooAddonsDir>${distro.baseDir}/odoo_addons</distro.odooAddonsDir>
+    <distro.odooconfigDir>${distro.baseDir}/odoo_config</distro.odooconfigDir>
 
     <!-- Core -->
     <openMRSVersion>2.1.3</openMRSVersion>
@@ -32,6 +33,7 @@
     <!-- Configs -->
     <openmrsconfigVersion>1.0.0-SNAPSHOT</openmrsconfigVersion>
     <bahmniconfigVersion>1.0.0-SNAPSHOT</bahmniconfigVersion>
+    <odooconfigVersion>1.0.0-SNAPSHOT</odooconfigVersion>
 
     <!-- Bahmni Apps -->
     <bahmniappsRevision>0.91.x</bahmniappsRevision>
@@ -94,6 +96,12 @@
       <artifactId>bahmni-config-hsc</artifactId>
       <type>zip</type>
       <version>${bahmniconfigVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.crudem</groupId>
+      <artifactId>odoo-config-hsc</artifactId>
+      <type>zip</type>
+      <version>${odooconfigVersion}</version>
     </dependency>
     <dependency>
       <groupId>net.mekomsolutions</groupId>
@@ -358,6 +366,20 @@
               <useBaseVersion>true</useBaseVersion>
               <outputDirectory>${distro.bahmniconfigDir}</outputDirectory>
               <includeArtifactIds>bahmni-config-hsc</includeArtifactIds>
+            </configuration>
+          </execution>
+          <!-- Odoo config -->
+          <execution>
+            <id>copy-odoo-config</id>
+            <phase>package</phase>
+            <goals>
+              <goal>unpack-dependencies</goal>
+            </goals>
+            <configuration>
+              <excludeTransitive>true</excludeTransitive>
+              <useBaseVersion>true</useBaseVersion>
+              <outputDirectory>${distro.odooconfigDir}</outputDirectory>
+              <includeArtifactIds>odoo-config-hsc</includeArtifactIds>
             </configuration>
           </execution>
           <!-- Bahmni Apps -->
