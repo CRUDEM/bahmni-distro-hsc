@@ -37,6 +37,7 @@
 
     <!-- Odoo addons -->
     <odooInitializerVersion>1.0-SNAPSHOT</odooInitializerVersion>
+    <priceRecalculationVersion>10.0.1.0.0</priceRecalculationVersion>
 
   </properties>
 
@@ -69,6 +70,12 @@
       <groupId>org.openmrs.module</groupId>
       <artifactId>erp-omod</artifactId>
       <version>${openmrsERPVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>net.mekomsolutions.odoo</groupId>
+      <artifactId>sale_order_price_recalculation</artifactId>
+      <version>${priceRecalculationVersion}</version>
+      <type>zip</type>
     </dependency>
   </dependencies>
 
