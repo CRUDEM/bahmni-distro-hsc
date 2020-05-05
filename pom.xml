@@ -77,6 +77,12 @@
       <version>${priceRecalculationVersion}</version>
       <type>zip</type>
     </dependency>
+    <dependency>
+      <groupId>org.bahmni</groupId>
+      <artifactId>reports</artifactId>
+      <type>war</type>
+      <version>0.92-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -156,6 +162,16 @@
         <updatePolicy>always</updatePolicy>
       </snapshots>
     </repository>
+    <repository>
+     <id>repo.mybahmni.org</id>
+     <name>bahmni-artifactory-snapshots</name>
+     <url>http://repo.mybahmni.org.s3.amazonaws.com/artifactory/snapshot</url>
+   </repository>
+   <repository>
+     <id>repo.mybahmni.org-release</id>
+     <name>bahmni-artifactory-release</name>
+     <url>http://repo.mybahmni.org.s3.amazonaws.com/artifactory/release</url>
+   </repository>
   </repositories>
 
 </project>
