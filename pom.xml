@@ -3,7 +3,7 @@
   <groupId>org.crudem</groupId>
   <artifactId>bahmni-distro-hsc</artifactId>
   <name>HSC distribution</name>
-  <version>1.0.0</version>
+  <version>1.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <developers>
@@ -19,7 +19,7 @@
   <parent>
     <groupId>net.mekomsolutions</groupId>
     <artifactId>bahmni-distro-haiti</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0-SNAPSHOT</version>
   </parent>
 
   <properties>
@@ -28,9 +28,9 @@
     <distro.odooconfigDir>${distro.baseDir}/odoo_config</distro.odooconfigDir>
 
     <!-- Configs -->
-    <child.openmrsconfigVersion>1.0.0</child.openmrsconfigVersion>
-    <child.bahmniconfigVersion>1.0.0</child.bahmniconfigVersion>
-    <child.odooconfigVersion>1.0.0</child.odooconfigVersion>
+    <child.openmrsconfigVersion>1.1.0-SNAPSHOT</child.openmrsconfigVersion>
+    <child.bahmniconfigVersion>1.1.0-SNAPSHOT</child.bahmniconfigVersion>
+    <child.odooconfigVersion>1.1.0-SNAPSHOT</child.odooconfigVersion>
 
     <!-- OpenMRS modules -->
     <openmrsERPVersion>1.0.0</openmrsERPVersion>
