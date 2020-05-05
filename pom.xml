@@ -3,7 +3,7 @@
   <groupId>org.crudem</groupId>
   <artifactId>bahmni-distro-hsc</artifactId>
   <name>HSC distribution</name>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>pom</packaging>
 
   <developers>
@@ -19,7 +19,7 @@
   <parent>
     <groupId>net.mekomsolutions</groupId>
     <artifactId>bahmni-distro-haiti</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
 
   <properties>
@@ -28,15 +28,15 @@
     <distro.odooconfigDir>${distro.baseDir}/odoo_config</distro.odooconfigDir>
 
     <!-- Configs -->
-    <child.openmrsconfigVersion>1.0.0-SNAPSHOT</child.openmrsconfigVersion>
-    <child.bahmniconfigVersion>1.0.0-SNAPSHOT</child.bahmniconfigVersion>
-    <child.odooconfigVersion>1.0.0-SNAPSHOT</child.odooconfigVersion>
+    <child.openmrsconfigVersion>1.0.0</child.openmrsconfigVersion>
+    <child.bahmniconfigVersion>1.0.0</child.bahmniconfigVersion>
+    <child.odooconfigVersion>1.0.0</child.odooconfigVersion>
 
     <!-- OpenMRS modules -->
-    <openmrsERPVersion>1.0.0-SNAPSHOT</openmrsERPVersion>
+    <openmrsERPVersion>1.0.0</openmrsERPVersion>
 
     <!-- Odoo addons -->
-    <odooInitializerVersion>1.0-SNAPSHOT</odooInitializerVersion>
+    <odooInitializerVersion>1.0.0</odooInitializerVersion>
     <priceRecalculationVersion>10.0.1.0.0</priceRecalculationVersion>
 
   </properties>
