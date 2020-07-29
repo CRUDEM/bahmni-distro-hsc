@@ -28,9 +28,9 @@
     <distro.odooconfigDir>${distro.baseDir}/odoo_config</distro.odooconfigDir>
 
     <!-- Configs -->
-    <child.openmrsconfigVersion>1.1.0-SNAPSHOT</child.openmrsconfigVersion>
-    <child.bahmniconfigVersion>1.1.0-SNAPSHOT</child.bahmniconfigVersion>
-    <child.odooconfigVersion>1.1.0-SNAPSHOT</child.odooconfigVersion>
+    <child.1.openmrsconfigVersion>1.1.0-SNAPSHOT</child.1.openmrsconfigVersion>
+    <child.1.bahmniconfigVersion>1.1.0-SNAPSHOT</child.1.bahmniconfigVersion>
+    <child.1.odooconfigVersion>1.1.0-SNAPSHOT</child.1.odooconfigVersion>
 
     <!-- OpenMRS modules -->
     <openmrsERPVersion>1.0.0</openmrsERPVersion>
@@ -46,19 +46,19 @@
       <groupId>org.crudem</groupId>
       <artifactId>openmrs-config-hsc</artifactId>
       <type>zip</type>
-      <version>${child.openmrsconfigVersion}</version>
+      <version>${child.1.openmrsconfigVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.crudem</groupId>
       <artifactId>bahmni-config-hsc</artifactId>
       <type>zip</type>
-      <version>${child.bahmniconfigVersion}</version>
+      <version>${child.1.bahmniconfigVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.crudem</groupId>
       <artifactId>odoo-config-hsc</artifactId>
       <type>zip</type>
-      <version>${child.odooconfigVersion}</version>
+      <version>${child.1.odooconfigVersion}</version>
     </dependency>
     <dependency>
       <groupId>net.mekomsolutions.odoo</groupId>
