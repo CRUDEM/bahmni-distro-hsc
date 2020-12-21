@@ -36,7 +36,7 @@
     <openmrsERPVersion>1.0.0</openmrsERPVersion>
 
     <!-- Odoo addons -->
-    <odooInitializerVersion>1.0.0</odooInitializerVersion>
+    <odooInitializerVersion>1.1.0-SNAPSHOT</odooInitializerVersion>
     <priceRecalculationVersion>10.0.1.0.0</priceRecalculationVersion>
 
   </properties>
