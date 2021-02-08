@@ -34,7 +34,6 @@
 
     <!-- OpenMRS modules -->
     <fhir2Version>1.2.0-SNAPSHOT</fhir2Version>
-    <openmrsERPVersion>1.0.0</openmrsERPVersion>
 
     <!-- Odoo addons -->
     <odooInitializerVersion>1.0.0</odooInitializerVersion>
@@ -66,11 +65,6 @@
       <artifactId>odoo_initializer</artifactId>
       <version>${odooInitializerVersion}</version>
       <type>zip</type>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>erp-omod</artifactId>
-      <version>${openmrsERPVersion}</version>
     </dependency>
     <dependency>
       <groupId>net.mekomsolutions.odoo</groupId>
