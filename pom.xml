@@ -33,6 +33,7 @@
     <child.1.odooconfigVersion>1.1.0-SNAPSHOT</child.1.odooconfigVersion>
 
     <!-- OpenMRS modules -->
+    <fhir2Version>1.2.0-SNAPSHOT</fhir2Version>
     <openmrsERPVersion>1.0.0</openmrsERPVersion>
 
     <!-- Odoo addons -->
@@ -82,6 +83,11 @@
       <artifactId>reports</artifactId>
       <type>war</type>
       <version>0.92-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>fhir2-omod</artifactId>
+      <version>${fhir2Version}</version>
     </dependency>
   </dependencies>
 
