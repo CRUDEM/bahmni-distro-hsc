@@ -35,9 +35,6 @@
     <!-- OpenMRS modules -->
     <fhir2Version>1.2.0-SNAPSHOT</fhir2Version>
 
-    <!-- Odoo addons -->
-    <odooInitializerVersion>1.0.0</odooInitializerVersion>
-    <priceRecalculationVersion>10.0.1.0.0</priceRecalculationVersion>
 
   </properties>
 
@@ -59,24 +56,6 @@
       <artifactId>odoo-config-hsc</artifactId>
       <type>zip</type>
       <version>${child.1.odooconfigVersion}</version>
-    </dependency>
-    <dependency>
-      <groupId>net.mekomsolutions.odoo</groupId>
-      <artifactId>odoo_initializer</artifactId>
-      <version>${odooInitializerVersion}</version>
-      <type>zip</type>
-    </dependency>
-    <dependency>
-      <groupId>net.mekomsolutions.odoo</groupId>
-      <artifactId>sale_order_price_recalculation</artifactId>
-      <version>${priceRecalculationVersion}</version>
-      <type>zip</type>
-    </dependency>
-    <dependency>
-      <groupId>org.bahmni</groupId>
-      <artifactId>reports</artifactId>
-      <type>war</type>
-      <version>0.92-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.openmrs.module</groupId>
