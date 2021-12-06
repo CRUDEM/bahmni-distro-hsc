@@ -33,7 +33,7 @@
     <child.1.odooconfigVersion>1.1.0-SNAPSHOT</child.1.odooconfigVersion>
 
     <!-- OpenMRS modules -->
-    <fhir2Version>1.2.0-SNAPSHOT</fhir2Version>
+    <fhir2Version>1.4.0-SNAPSHOT</fhir2Version>
 
 
   </properties>
