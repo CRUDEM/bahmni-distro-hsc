@@ -37,6 +37,7 @@
     <fhir2Version>1.4.0-SNAPSHOT</fhir2Version>
 
     <eipRoutesOdooVersion>1.0-SNAPSHOT</eipRoutesOdooVersion>
+    <odooInitializerVersion>2.0.0-SNAPSHOT</odooInitializerVersion>
 
   </properties>
 
