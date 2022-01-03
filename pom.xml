@@ -31,7 +31,7 @@
     <!-- Configs -->
     <child.1.openmrsconfigVersion>1.1.0-SNAPSHOT</child.1.openmrsconfigVersion>
     <child.1.bahmniconfigVersion>1.1.0-SNAPSHOT</child.1.bahmniconfigVersion>
-    <child.1.odooconfigVersion>1.1.0-SNAPSHOT</child.1.odooconfigVersion>
+    <child.1.odooconfigVersion>1.2.0-SNAPSHOT</child.1.odooconfigVersion>
 
     <!-- OpenMRS modules -->
     <fhir2Version>1.4.0-SNAPSHOT</fhir2Version>
