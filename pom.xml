@@ -19,7 +19,7 @@
   <parent>
     <groupId>net.mekomsolutions</groupId>
     <artifactId>bahmni-distro-haiti</artifactId>
-    <version>1.3.0</version>
+    <version>2.0.0-SNAPSHOT</version>
   </parent>
 
   <properties>
@@ -28,9 +28,9 @@
     <distro.odooconfigDir>${distro.baseDir}/odoo_config</distro.odooconfigDir>
 
     <!-- Configs -->
-    <child.1.openmrsconfigVersion>1.1.0</child.1.openmrsconfigVersion>
-    <child.1.bahmniconfigVersion>1.1.0</child.1.bahmniconfigVersion>
-    <child.1.odooconfigVersion>1.1.0</child.1.odooconfigVersion>
+    <child.1.openmrsconfigVersion>1.2.0-SNAPSHOT</child.1.openmrsconfigVersion>
+    <child.1.bahmniconfigVersion>1.2.0-SNAPSHOT</child.1.bahmniconfigVersion>
+    <child.1.odooconfigVersion>1.2.0-SNAPSHOT</child.1.odooconfigVersion>
 
     <!-- OpenMRS modules -->
     <fhir2Version>1.4.0-SNAPSHOT</fhir2Version>
