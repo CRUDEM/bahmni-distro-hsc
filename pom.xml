@@ -26,7 +26,6 @@
 
     <distro.odooAddonsDir>${distro.baseDir}/odoo_addons</distro.odooAddonsDir>
     <distro.odooconfigDir>${distro.baseDir}/odoo_config</distro.odooconfigDir>
-    <distro.eipRoutesDir>${distro.baseDir}/eip_config</distro.eipRoutesDir>
 
     <!-- Configs -->
     <child.1.openmrsconfigVersion>1.2.0-SNAPSHOT</child.1.openmrsconfigVersion>
@@ -36,8 +35,6 @@
     <!-- OpenMRS modules -->
     <fhir2Version>1.4.0-SNAPSHOT</fhir2Version>
 
-    <eipRoutesOdooVersion>1.0.0-SNAPSHOT</eipRoutesOdooVersion>
-    <odooInitializerVersion>2.0.0-SNAPSHOT</odooInitializerVersion>
 
   </properties>
 
@@ -64,12 +61,6 @@
       <groupId>org.openmrs.module</groupId>
       <artifactId>fhir2-omod</artifactId>
       <version>${fhir2Version}</version>
-    </dependency>
-    <dependency>
-      <groupId>net.mekomsolutions.eip</groupId>
-      <artifactId>openmrs-odoo</artifactId>
-      <version>${eipRoutesOdooVersion}</version>
-      <type>zip</type>
     </dependency>
   </dependencies>
 
@@ -138,73 +129,8 @@
               <includeGroupIds>net.mekomsolutions.odoo</includeGroupIds>
             </configuration>
           </execution>
-          <!-- Odoo OpenMRS EIP routes -->
-          <execution>
-            <id>unpack-eip-routes-odoo</id>
-            <phase>package</phase>
-            <goals>
-              <goal>unpack-dependencies</goal>
-            </goals>
-            <configuration>
-              <excludeTransitive>true</excludeTransitive>
-              <useBaseVersion>true</useBaseVersion>
-              <outputDirectory>${distro.eipRoutesDir}</outputDirectory>
-              <includeArtifactIds>openmrs-odoo</includeArtifactIds>
-            </configuration>
-          </execution>
         </executions>
       </plugin>
-
-      <plugin>
-      <artifactId>maven-antrun-plugin</artifactId>
-        <version>1.7</version>
-        <executions>
-        <execution>
-            <id>move-odoo-routes</id>
-            <phase>package</phase>
-            <configuration>
-              <target>
-                <move todir="${distro.eipRoutesDir}/routes/odoo">
-                  <fileset dir="${distro.eipRoutesDir}/openmrs-odoo-${eipRoutesOdooVersion}/routes" />
-                </move>
-              </target>
-            </configuration>
-            <goals>
-              <goal>run</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>clean-odoo-build-directory</id>
-            <phase>package</phase>
-            <configuration>
-              <target>
-                <delete includeEmptyDirs="true">
-                  <fileset dir="${distro.eipRoutesDir}/openmrs-odoo-${eipRoutesOdooVersion}" />
-                </delete>
-              </target>
-            </configuration>
-            <goals>
-              <goal>run</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>copy-ozone-config</id>
-            <phase>package</phase>
-            <configuration>
-              <target>
-                <copy todir="${distro.baseDir}/eip_config">
-                  <fileset dir="${project.basedir}/eip_config"></fileset>
-                </copy>
-              </target>
-            </configuration>
-            <goals>
-              <goal>run</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-
-
     </plugins>
   </build>
   <repositories>
