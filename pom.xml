@@ -24,6 +24,8 @@
 
   <properties>
 
+    <odooWarehouseVersion>1.0.0-SNAPSHOT</odooWarehouseVersion>
+
     <distro.odooAddonsDir>${distro.baseDir}/odoo_addons</distro.odooAddonsDir>
     <distro.odooconfigDir>${distro.baseDir}/odoo_config</distro.odooconfigDir>
 
@@ -64,6 +66,12 @@
       <groupId>org.openmrs.module</groupId>
       <artifactId>fhir2-omod</artifactId>
       <version>${fhir2Version}</version>
+    </dependency>
+    <dependency>
+      <groupId>net.mekomsolutions.odoo</groupId>
+      <artifactId>odoo_warehouse</artifactId>
+      <version>${odooWarehouseVersion}</version>
+      <type>zip</type>
     </dependency>
   </dependencies>
 
