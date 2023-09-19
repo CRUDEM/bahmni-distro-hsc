@@ -50,7 +50,7 @@ The target version of OpenMRS Core.
 * Added new chief complaints: Douleur ostéo-articulaire, Suivis diabétique, Suivis HTA, Rendez-vous clinique.
 * Added ability to cancel quotations in bulk to Odoo.
 * Added ability to display patient weight and DOB on Odoo quotation.
-* Disable Odoo's Quotation default filter.
+* Disabled Odoo's Quotation default filter.
 * Added ability to delete quotation when no order line is present anymore.
 * Enhanced 'New' vs 'subsequent' MSPP visits to be based on the year of visit.
 * Changed materials from consumables to stockable products.
