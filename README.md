@@ -51,7 +51,7 @@ The target version of OpenMRS Core.
 * Added ability to cancel quotations in bulk to Odoo.
 * Added ability to display patient weight and DOB on Odoo quotation.
 * Disabled Odoo's Quotation default filter.
-* Added ability to delete quotation when no order line is present anymore.
+* Added ability to cancel a quotation when no order line is present anymore.
 * Enhanced 'New' vs 'subsequent' MSPP visits to be based on the year of visit.
 * Changed materials from consumables to stockable products.
 * Added ability to display Patient ID on the quotation, order and invoice
