@@ -34,13 +34,11 @@ The target version of OpenMRS Core.
 * Fixed lab tests with changed uuids
 
 ### Version 1.6.0
-* Deploy latest SSL certificate on production.
 * Fixed error on the HSC Dev clinical app occurred when logged in with FR locale.
 * Added missing Metronidazole to EMR.
 * Added Widal’s and Zeihl to the Blood sample.
 * Added Filariasis to blood sample type
 * Added procedures for new maxillofacial surgical procedures.
-* Ensured Odoo and OpenMRS checksums are backed up on production server.
 * Changed Spironolactone 50mg Units to Comprime(s).
 * Added consultation 'Odontology' in Odoo.
 * Added Direct and Indirect Bilirubin Lab Tests.
@@ -54,8 +52,7 @@ The target version of OpenMRS Core.
 * Added ability to cancel a quotation when no order line is present anymore.
 * Enhanced 'New' vs 'subsequent' MSPP visits to be based on the year of visit.
 * Changed materials from consumables to stockable products.
-* Added ability to display Patient ID on the quotation, order and invoice
-* Ensured Bahmni, Odoo and OpenMRS configs checksums backup feature.
+* Added ability to display Patient ID on the quotation, order and invoice.
 * Stopped recreation of Manufacturing operation types  (for Pharmacy and Warehouse) at server restart.
 * Added Weight on Patient banner.
 * Reworked patient registration card printout.
