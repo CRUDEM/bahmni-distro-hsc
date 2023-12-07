@@ -25,6 +25,7 @@
   <properties>
 
     <odooWarehouseVersion>1.0.0</odooWarehouseVersion>
+    <odooSaleDeliveryStatusVersion>14.0.1.0.0</odooSaleDeliveryStatusVersion>
 
     <distro.odooAddonsDir>${distro.baseDir}/odoo_addons</distro.odooAddonsDir>
     <distro.odooconfigDir>${distro.baseDir}/odoo_config</distro.odooconfigDir>
@@ -71,6 +72,12 @@
       <groupId>net.mekomsolutions.odoo</groupId>
       <artifactId>odoo_warehouse</artifactId>
       <version>${odooWarehouseVersion}</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>net.mekomsolutions.odoo</groupId>
+      <artifactId>sotto_sale_delivery_status</artifactId>
+      <version>${odooSaleDeliveryStatusVersion}</version>
       <type>zip</type>
     </dependency>
   </dependencies>
