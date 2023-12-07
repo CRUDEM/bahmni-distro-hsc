@@ -26,6 +26,7 @@
 
     <odooWarehouseVersion>1.0.0</odooWarehouseVersion>
     <odooSaleDeliveryStatusVersion>14.0.1.0.0</odooSaleDeliveryStatusVersion>
+    <odooSalePaymentStatusVersion>14.0.1.0.0</odooSalePaymentStatusVersion>
 
     <distro.odooAddonsDir>${distro.baseDir}/odoo_addons</distro.odooAddonsDir>
     <distro.odooconfigDir>${distro.baseDir}/odoo_config</distro.odooconfigDir>
@@ -78,6 +79,12 @@
       <groupId>net.mekomsolutions.odoo</groupId>
       <artifactId>sotto_sale_delivery_status</artifactId>
       <version>${odooSaleDeliveryStatusVersion}</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>net.mekomsolutions.odoo</groupId>
+      <artifactId>sotto_sale_payment_status</artifactId>
+      <version>${odooSalePaymentStatusVersion}</version>
       <type>zip</type>
     </dependency>
   </dependencies>
