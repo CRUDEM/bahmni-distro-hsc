@@ -36,6 +36,7 @@
 
     <!-- OpenMRS modules -->
     <fhir2Version>1.3.0</fhir2Version>
+    <initializerVersion>2.3.1-SNAPSHOT</initializerVersion>
 
     <!-- EIP override properties -->
     <create.customer.if.not.exist>true</create.customer.if.not.exist>
