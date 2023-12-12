@@ -30,6 +30,11 @@ The target version of OpenMRS Core.
 
 ## Release Notes
 
+### Version 1.7.0
+* Fixed  lab test datatypes, from Free Text to Numeric.
+* Added Odoo Sale Delivery Status add-on.
+* Added Odoo Sale Payment Status add-on.
+
 ### Version 1.6.1
 * Fixed lab tests with changed uuids
 
