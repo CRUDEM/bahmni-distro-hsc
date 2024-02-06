@@ -31,9 +31,14 @@ The target version of OpenMRS Core.
 ## Release Notes
 
 ### Version 1.7.0
-* Fixed  lab test datatypes, from Free Text to Numeric.
+#### Updates
 * Added Odoo Sale Delivery Status add-on.
 * Added Odoo Sale Payment Status add-on.
+#### Fixes
+* Fixed  lab test datatypes, from Free Text to Numeric.
+* Synced DOB and Patient ID of patients created prior 1.6.0 to Odoo
+* Correctly mapped sickle cell and cardiology visit patients to respective patient lists in French locale
+* Fixed drug name presentation for multi-ingredient medications
 
 ### Version 1.6.1
 * Fixed lab tests with changed uuids
