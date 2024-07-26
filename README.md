@@ -30,6 +30,27 @@ The target version of OpenMRS Core.
 
 ## Release Notes
 
+### Version 1.8.0
+* Added a new section Groupe Antecedants Gynecologiques to Examen Gynecologique form
+* Added a new question "Position" to the section "Details du fœtus" of the Consultation Prénatale form
+* Changed the date field to a numeric field in "Groupe de contraception > Date" section of the Examen gynécologique form
+* Allowed selection of multiple choices for "Groupe de plaintes gynécologiques" question and added three new options to it in the Examen Gynecologique form
+* Added new Lab test D-Dimer Exclusion in Bahmni and Odoo
+* Updated HSC logo
+* Added a slot to pin  patient lists of visit type Médecine Interne
+* Added new services to Odoo and Bahmni EMR
+* Created a new visit type Post-Natale 
+* Updated products in Odoo and drugs in the EMR 
+* Added "Examen obstétrical" form for the Pre-Natal clinic
+* Made ‘General set’ block mandatory in the Examen des Systemes form
+* Added 'None' as an option to the Personal History Set,Family History Set and modified Allergies question to have answers 'Yes' with a text box and 'No' in the Historique de santé form
+* Made some fields in the Historique de santé form mandatory
+* Made Motif de Consultation form fields mandatory
+* Removed Examination field from the Physical Examination form
+* Fixed sync issue of Nystatin & Metronidazole 1,000,000units/500mg (Ovule(s)) to Odoo
+* Fixed sync issue of Clotrimazole ovule vaginale 500mg (Ovule(s)) to Odoo
+* Added SENAITE to Bahmni Docker Compose
+
 ### Version 1.7.0
 #### Updates
 * Added Odoo Sale Delivery Status add-on.
