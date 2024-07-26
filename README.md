@@ -30,6 +30,8 @@ The target version of OpenMRS Core.
 
 ## Release Notes
 
+### Version 1.9.0
+
 ### Version 1.8.0
 * Added a new section Groupe Antecedants Gynecologiques to Examen Gynecologique form
 * Added a new question "Position" to the section "Details du fœtus" of the Consultation Prénatale form
