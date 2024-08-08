@@ -30,6 +30,8 @@ The target version of OpenMRS Core.
 
 ## Release Notes
 
+### Version 1.9.0
+
 ### Version 1.8.1
 * Updated drugs in the EMR 
 
