@@ -31,7 +31,7 @@ The target version of OpenMRS Core.
 ## Release Notes
 
 ### Version 1.8.2
-* Fixed BOM lines in Odoo that caused products not to load in Odoo
+* Fixed BOM lines in Odoo that caused products not to load
 
 ### Version 1.8.1
 * Updated drugs in the EMR 
