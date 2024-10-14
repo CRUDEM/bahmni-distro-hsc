@@ -32,6 +32,7 @@ The target version of OpenMRS Core.
 
 ### Version 1.8.2
 * Fixed BOM lines in Odoo that caused products not to load
+* Reverted Examen physique form to original UUID and ID
 
 ### Version 1.8.1
 * Updated drugs in the EMR 
