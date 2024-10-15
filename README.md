@@ -30,7 +30,10 @@ The target version of OpenMRS Core.
 
 ## Release Notes
 
-### Version 1.9.0
+### Version 1.8.2
+* Resolved issues with Odoo products
+* Resolved issues with Odoo BOM lines
+* Restored the UUID and ID of the Examen physique form to their original values
 
 ### Version 1.8.1
 * Updated drugs in the EMR 
