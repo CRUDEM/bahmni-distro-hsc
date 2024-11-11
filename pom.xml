@@ -19,7 +19,7 @@
   <parent>
     <groupId>net.mekomsolutions</groupId>
     <artifactId>bahmni-distro-haiti</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
+    <version>3.0.0-20241022.081915-6</version>
   </parent>
 
   <properties>
